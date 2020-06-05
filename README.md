@@ -1,3 +1,5 @@
+[![askewc](https://circleci.com/gh/askewc/step-2020.svg?style=svg)](https://app.circleci.com/pipelines/github/askewc/step-2020?branch=master)
+
 # Google Student Training in Engineering Program
 
 This repo contains the projects you'll work on for the first half of STEP.
