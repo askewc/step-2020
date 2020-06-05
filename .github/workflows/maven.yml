@@ -22,4 +22,4 @@ jobs:
     - name: Google Java Format
       uses: axel-op/googlejavaformat-action@v3.1.0  
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file portfolio/pom.xml
