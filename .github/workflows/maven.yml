@@ -3,10 +3,10 @@
 
 name: Maven CI and Lint Formatting
 
-on:
+on: 
   push:
-    branches:
-      - master
+    tags-ignore:
+      - automated
 
 jobs:
   build:
@@ -15,10 +15,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Tag commit
+      uses: tvdias/github-tagger@v0.0.1
+      with:
+        tag: "automated"
+    
     - uses: actions/setup-java@v1
       with:
         java-version: "11"
+    
     - name: Google Java Format
       uses: axel-op/googlejavaformat-action@v3.1.0
+    
     - name: Build with Maven
       run: mvn -B package --file portfolio/pom.xml
