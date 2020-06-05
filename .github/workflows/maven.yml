@@ -3,10 +3,7 @@
 
 name: Maven CI and Lint Formatting
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   build:
