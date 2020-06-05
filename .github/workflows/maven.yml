@@ -3,7 +3,10 @@
 
 name: Maven CI and Lint Formatting
 
-on: push
+on: 
+  push:
+    tags-ignore:
+      - automated
 
 jobs:
   build:
